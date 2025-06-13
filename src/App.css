@@ -1,21 +1,44 @@
 .App {
   display: flex;
   flex-direction: column;
-  height: 90vh;
-   font-family: 'Inter', sans-serif;
-  
+  height: 100vh; /* Changed to 100vh to use full viewport height */
+  font-family: 'Inter', sans-serif;
 }
 
 .main-container {
   display: flex;
   flex: 1;
   overflow: hidden;
- background: #EEF2FF;
+  background: #EEF2FF;
+}
 
+aside {
+  width: 22%; /* Fixed width for the Sidebar */
+  background: #fff; /* Example background, adjust as needed */
+  border-right: 1px solid #ccc; /* Optional: visual separation */
+  overflow-y: hidden; /* Allow scrolling if Sidebar content is long */
+}
+
+main {
+  flex: 1;
+  overflow-y: hidden; /* Allow main content to scroll */
 }
 
 .content {
   flex: 1;
-  overflow-y: hidden;
   padding: 20px;
+  box-sizing: border-box;
+  height: 100%; /* Ensure it takes full height of parent */
+  overflow:hidden;
+}
+
+/* Example Header styling (adjust based on your Header component) */
+header {
+  height: 66px; /* Fixed height for the Header */
+  background: #fff; /* Example background */
+  border-bottom: 1px solid #ccc; /* Optional: visual separation */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
 }

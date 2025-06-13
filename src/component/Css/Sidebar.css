@@ -1,94 +1,167 @@
-.sidebar {
-  width: 15.28%;
-  height: 90%;
-  background-color: #f8f9fa;
-  border-right: 1px solid #e0e0e0;
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, sans-serif;
-  position:fixed;
-
+ 
+.sidebar-containers {
+    height: calc(100vh - 64px);
+    /* height:60vh; */
+    box-shadow: 2px 0px 0px 1px rgb(235, 229, 229);
+    width: 22vw;
+    padding: 2em 20px 20px 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-.sidebar-header {
-  padding: 20px;
-  border-bottom: 1px solid #e0e0e0;
+ 
+ 
+.home-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    justify-content: space-between;
+    /* padding: */
 }
-
-
-
-.sidebar-nav {
-  flex: 1;
-  padding: 6px 0;
-  overflow-y: auto;
+ 
+ .home-svg{
+    margin-left:2px;
+ }
+ 
+.icon-and-text {
+ 
+    border: none;
+    background-color: transparent;
+    display: flex;
+    /* align-items: center; */
+    gap: 12px;
+    padding-top:8px;
+ 
 }
-
-.nav-section {
-  margin-bottom: 20px;
+ 
+svg{
+    width:20px;
+    height:20px;
 }
-
-.section-title {
-  display: block;
-  padding: 10px 20px;
-  font-size: 12px;
-  color: #888;
-  text-transform: uppercase;
+a {
+    text-decoration: none;
+    border: none;
 }
-
-.nav-item {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  font-size: 14px;
-  color: #333;
-  cursor: pointer;
+ 
+ .icon-text-label {
+    font-weight: 400;
+    font-size: 14px;
+    color: #18181B;
+   
 }
-
-.nav-item:hover {
-  background-color: #e8ecef;
+ 
+ 
+.new-text {
+    height: 25px;
+    width: 57px;
+    border-radius: 13px;
+    border: 1px solid #4876EE;
+    text-align: center;
+    background-color: #EEF2FF;
+    color: #4876EE;
+    font-weight: 500;
+    margin-top:5px;
+ 
 }
-
-.nav-item.active {
-  background-color: #e0e0e0;
-  font-weight: bold;
+ 
+.sections{
+    padding:5px;
 }
-
-.icon {
-  margin-right: 10px;
-  font-size: 16px;
+ 
+.sec-heading {
+    width: 100%;
+    /* padding-top:10px; */
+    display: flex;
+    flex-direction: row;
+    padding-top:8px;
+    /* justify-content: space-between; */
+    gap: 8px;
+    height: 4vh;
+ 
 }
-
-.badge {
-  margin-left: auto;
-  padding: 2px 6px;
-  border-radius: 10px;
-  font-size: 12px;
+ 
+.overview-text {
+    color: #A1A1AA;
+    font-weight: 400;
+    font-size: 13px;
 }
-
-.badge.new {
-  background-color: #007bff;
-  color: white;
+ 
+.horizontal-line {
+    width: 8em;
+    height: 1px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgb(102, 101, 101), white);
+    margin-top:10px;
 }
-
-.badge.count {
-  background-color: #28a745;
-  color: white;
+ 
+.grp-section{
+     display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    justify-content: space-between;
+    /* padding-top:8px; */
 }
-
-.badge.alert {
-  background-color: #dc3545;
-  color: white;
+ 
+.grp-operations-notify {
+ 
+    border-radius: 50%;
+    height: 21px;
+    width: 23px;
+    background-color: #00C217;
+ 
+ 
 }
-
-.sidebar-footer {
-  padding: 10px 20px;
-  border-top: 1px solid #e0e0e0;
-  display: flex;
-  justify-content: space-between;
+ 
+.grp-operations-notify-num {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 15px;
 }
-
-.sidebar-footer .icon {
-  font-size: 20px;
-  color: #666;
-  cursor: pointer;
+ 
+.analytics-insights-hr-line {
+    width: 2.8em;
+    height: 2px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgb(102, 101, 101), white);
+    margin-top:7px;
 }
+ 
+.fusion-rep-notify{
+    border-radius: 40%;
+    height: 20px;
+    width: 21px;
+    background-color: red;
+    margin-top:7px;
+}
+ 
+.fusion-rep-notify-num{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 15px;
+}
+ 
+.cotton-img-style{
+    height:25px;
+    width:25px;
+    /* color:grey; */
+}
+ 
+.sidebar-footer-section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ 
+.vertical-line {
+      width: 2px;              
+      height: 35px;          
+      background-color: #D2D2D2;
+      /* margin: 20px;             */
+}
+ 

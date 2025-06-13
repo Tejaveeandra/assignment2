@@ -1,0 +1,378 @@
+.wholeProfile {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  height: 400px;
+  top: 10%;
+  left: 20.4%;
+    margin-top:15px;
+}
+ 
+.Profile {
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #E8E8E8;
+  background: #FFFFFF;
+  padding: 10px;
+  box-sizing: border-box;
+}
+ 
+.Profile h1 {
+  font-size: 22px;
+  color: #18181B;
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-weight: 700;
+}
+ 
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #E8E8E8;
+}
+ 
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap:10px;
+}
+ 
+.info h3 {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+ 
+.info > p {
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 14px;
+  margin-top:-15px;
+}
+ 
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap:62px;
+}
+ 
+.info-item {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  gap:6px;
+}
+ 
+.info-item .label {
+  font-size: 14px;
+  color: #6E7C87;
+  font-weight: 500;
+  width:100px;
+}
+ 
+.info-item .data {
+  font-size: 16px;
+  color: #202020;
+    font-weight: 500;
+}
+ 
+.info-row-course {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 19px;
+    margin-top: 14px;
+}
+ 
+.info-item-course {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  gap:6px;
+}
+ 
+.info-item-course .label {
+  font-size: 14px;
+  color: #6E7C87;
+  font-weight: 500;
+  margin-left:16px;
+  width:91px;
+}
+ 
+.info-item-course .data {
+  font-size: 16px;
+  color: #202020;
+    font-weight: 500;
+    text-align: right;
+    margin-right:4  px;
+}
+ 
+.contact-icons {
+  display: flex;
+  gap: 0px;
+  margin-top: 35px;
+  justify-content: center;
+  align-items: center;
+  margin-top:13px;
+}
+ 
+.course-badge {
+  display: flex;
+  align-items: center;
+  background-color: #E6F0FA;
+  color:  #191453;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 5px 15px;
+  border-radius: 15px;
+  gap: 5px;
+  margin-right:105px;
+}
+ 
+.course-badge::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #2238C5;
+  border-radius: 50%;
+}
+ 
+.contact-icon-mail {
+ width: 32px;
+    height: 31px;
+}
+ 
+.contact-icon-phone {
+ width: 32px;
+    height: 26px;
+margin-left:16px;
+}
+ 
+.finances-info {
+  width: 70%;
+  height: 466px;
+  position: relative;
+  margin-left:2px;
+}
+ 
+.student-finances {
+  width: 100%;
+  height: 27%;
+  border-radius: 10px;
+  border: 1px solid #E8E8E8;
+  padding: 6px 10px;
+  gap: 10px;
+  background: #FFFFFF;
+}
+ 
+.student-finances-text h1 {
+  font-size: 17px;
+  color: #18181B;
+  font-weight: 700;
+  color: linear-gradient(0deg, var(--color-gray-70, #7E7E7E), var(--color-gray-70, #7E7E7E));
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+margin-bottom:11px;
+margin-top:5px;
+}
+ 
+.student-finances p {
+  font-size: 12px;
+  color: #404040;
+  margin-bottom:21px;
+}
+.student-finances-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  /* justify-content: flex-end; */
+  margin-right:141px;
+  width: 100%;
+}
+ 
+.finance-button {
+  padding: 8px 16px;
+  border: 1px solid #E8E8E8;
+  border-radius: 20px;
+  background: #FFFFFF;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  white-space: nowrap;
+}
+ 
+.finance-button.active {
+ background-color: #4876EE;
+  color: #fff;
+  border-color: #007bff;
+}
+ 
+/* Existing CSS remains unchanged, adding new styles below */
+ 
+/* Existing CSS remains unchanged, updating and adding new styles below */
+ 
+/* Overlay to dim the background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+ 
+/* Wrapper for the icons to position the popup relative to the icon */
+.contact-icon-wrapper {
+  display: inline-block;
+}
+ 
+/* Popup styling to match the image */
+.contact-popup {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  width: 220px;
+  text-align: left;
+}
+ 
+/* Upward arrow for the popup */
+.contact-popup::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  z-index: 1000;
+}
+ 
+/* Border for the arrow to match the popup border */
+.contact-popup::after {
+  content: '';
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid #ccc;
+  z-index: 999;
+}
+ 
+/* Style the header inside the popup (only for phone popup) */
+.contact-popup h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  text-align: center;
+}
+ 
+/* Style for each contact item */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 0;
+}
+ 
+/* Style the label (Father Contact, Mother Contact, Father Email, Mother Email) */
+.contact-label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+ 
+/* Style the data (phone number, email) */
+.contact-data {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+ 
+/* Ensure the icons are visible above the overlay */
+.contact-icon-mail,
+.contact-icon-phone {
+  position: relative;
+  z-index: 1000;
+}
+ 
+/* Add padding to the contact icons to match spacing */
+.contact-icon-mail {
+  width: 30px;
+  height: 28px;
+}
+ 
+.contact-icon-phone {
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+}
+ 
+/* Add a small icon before the contact label to mimic the image */
+.contact-item::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+}
+ 
+/* Specific icon for phone popup */
+.contact-popup:not(.email-popup) .contact-item::before {
+  background: url(../../Images/email.png) no-repeat center; /* Replace with actual person icon path */
+}
+ 
+/* Specific icon for email popup */
+.email-popup .contact-item::before {
+  background: url(../../Images/email.png) no-repeat center; /* Replace with actual email icon path */
+}
+ 
+/* Specific styling for email popup to match the image */
+.email-popup .contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+ 
+.email-popup .contact-label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+ 
+.email-popup .contact-data {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  margin-left: 24px; /* Offset to align with the label text, considering the icon */
+}
